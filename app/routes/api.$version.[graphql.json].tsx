@@ -1,4 +1,4 @@
-import {LoaderFunctionArgs} from 'react-router';
+import {LoaderFunctionArgs} from '@remix-run/node';
 
 export async function action({params, context, request}: LoaderFunctionArgs) {
   const response = await fetch(

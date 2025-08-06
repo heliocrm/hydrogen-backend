@@ -1,4 +1,4 @@
-import { Link, useLoaderData, type MetaFunction } from 'react-router';
+import { Link, useLoaderData, type MetaFunction } from 'react-router-dom';
 import {
   Money,
   getPaginationVariables,

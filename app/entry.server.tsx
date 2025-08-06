@@ -1,9 +1,9 @@
 import type {AppLoadContext} from '@shopify/remix-oxygen';
-import {ServerRouter} from 'react-router';
+import {ServerRouter} from '@remix-run/react';
 import {isbot} from 'isbot';
 import {renderToReadableStream} from 'react-dom/server';
 import {createContentSecurityPolicy} from '@shopify/hydrogen';
-import type {EntryContext} from 'react-router';
+import type {EntryContext} from '@remix-run/react';
 
 export default async function handleRequest(
   request: Request,

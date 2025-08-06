@@ -1,19 +1,20 @@
 {
   "version": 2,
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "builds": [
     {
-      "src": "dist/server/index.js",
+      "src": "build/server/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/dist/server/index.js"
+      "dest": "/build/server/index.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/server/index.js"
+      "dest": "/build/server/index.js"
     }
   ],
   "env": {
@@ -21,7 +22,7 @@
   },
   "regions": ["iad1", "sfo1"],
   "functions": {
-    "dist/server/index.js": {
+    "build/server/index.js": {
       "maxDuration": 30
     }
   }

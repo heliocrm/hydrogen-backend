@@ -1,4 +1,4 @@
-import { json } from '@shopify/remix-oxygen';
+import { json } from '@remix-run/node';
 
 const PRODUCTS_QUERY = `#graphql
   query getProducts($first: Int!, $after: String) {

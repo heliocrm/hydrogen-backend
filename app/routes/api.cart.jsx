@@ -1,4 +1,4 @@
-import { json } from '@shopify/remix-oxygen';
+import { json } from '@remix-run/node';
 
 const CART_QUERY = `#graphql
   query getCart($cartId: ID!) {
